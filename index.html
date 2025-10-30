@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aruchunan Agilan - Software Engineer, AI Enthusiast, Full Stack Developer">
+    <meta name="theme-color" content="#0d0d0d">
+    <title>Aruchunan Agilan - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="logo" aria-label="Logo">AA</div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Neural Network Background -->
+    <section class="neural-section" aria-hidden="true">
+        <canvas id="neuralCanvas"></canvas>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section">
+        <div class="hero-content">
+            <div class="hero-text animate-element">
+                <h1 class="hero-name">Aruchunan Agilan</h1>
+                <h2 class="hero-title">
+                    I'm a <span class="typing-text" aria-live="polite"></span>
+                </h2>
+                <p class="hero-subtitle">
+                    AI Enthusiast passionate about creating innovative digital solutions
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+            </div>
+
+            <!-- Hero Image Slideshow -->
+            <div class="hero-image animate-element">
+                <div class="slideshow-container">
+                    <div class="slide active"><img src="/a.png" alt="Portfolio image 1" loading="eager"></div>
+                    <div class="slide"><img src="/b.png" alt="Portfolio image 2" loading="lazy"></div>
+                    <div class="slide"><img src="/c.png" alt="Portfolio image 3" loading="lazy"></div>
+                    <div class="slide"><img src="/d.png" alt="Portfolio image 4" loading="lazy"></div>
+                    <div class="slide"><img src="/e.png" alt="Portfolio image 5" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title animate-element">About Me</h2>
+            <div class="about-content">
+                <div class="about-text animate-element">
+                    <p>
+                        A passionate Software Engineer, Full Stack Developer, UI/UX Engineer, and AI Enthusiast with over 2 years of professional experience in software, web development, and graphic design.
+                    </p>
+                    <p>
+                        Experienced in building end-to-end digital solutions, designing user-centered interfaces, and integrating AI-driven functionalities into web and mobile applications.
+                    </p>
+                    <p>
+                        Currently working as an Intern Associate Software Engineer at The UVA VEC Pvt. Ltd., contributing to client projects and enterprise-level applications while continuously enhancing skills in AI, machine learning, and full-stack development.
+                    </p>
+                </div>
+
+                <!-- Stats Section -->
+                <div class="about-stats animate-element">
+                    <div class="stat-card" data-target="2">
+                        <span></span><span></span><span></span><span></span>
+                        <div class="content">
+                            <h3>0+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="stat-card" data-target="15">
+                        <span></span><span></span><span></span><span></span>
+                        <div class="content">
+                            <h3>0+</h3>
+                            <p>Certifications</p>
+                        </div>
+                    </div>
+                    <div class="stat-card" data-target="10">
+                        <span></span><span></span><span></span><span></span>
+                        <div class="content">
+                            <h3>0+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+                    <div class="stat-card" data-target="4">
+                        <span></span><span></span><span></span><span></span>
+                        <div class="content">
+                            <h3>0+</h3>
+                            <p>Degree Certificates</p>
+                        </div>
+                    </div>
+                    <div class="stat-card" data-target="20">
+                        <span></span><span></span><span></span><span></span>
+                        <div class="content">
+                            <h3>0+</h3>
+                            <p>Skills & Languages</p>
+                        </div>
+                    </div>
+                    <div class="stat-card" data-target="5">
+                        <span></span><span></span><span></span><span></span>
+                        <div class="content">
+                            <h3>0+</h3>
+                            <p>Ongoing Projects</p>
+                        </div>
+                    </div>
+                    <div class="stat-card" data-target="3">
+                        <span></span><span></span><span></span><span></span>
+                        <div class="content">
+                            <h3>0+</h3>
+                            <p>UI/UX Case Studies</p>
+                        </div>
+                    </div>
+                    <div class="stat-card" data-target="8">
+                        <span></span><span></span><span></span><span></span>
+                        <div class="content">
+                            <h3>0+</h3>
+                            <p>Hackathons Participated</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="work-experience" id="work-experience">
+  <h2 class="section-title">My Work Experience</h2>
+
+  <div class="timeline">
+
+    <div class="timeline-row">
+      <div class="timeline-content">
+        <h3 class="job-title">AI Engineer @ AGI Technologies</h3>
+        <span class="job-duration">2024 – Present</span>
+        <p class="job-desc">
+          Developing deep neural systems, chatbots, and edge AI automations for global businesses.
+        </p>
+        <div class="hashtags">
+          <span>#AI</span><span>#DeepLearning</span><span>#Automation</span>
+        </div>
+      </div>
+      <div class="timeline-image">
+        <img src="images/agi.jpg" alt="AGI Technologies">
+      </div>
+    </div>
+
+    <div class="timeline-row">
+      <div class="timeline-content">
+        <h3 class="job-title">Software Developer @ Uva Vec</h3>
+        <span class="job-duration">2022 – 2024</span>
+        <p class="job-desc">
+          Created responsive web apps with scalable APIs and smooth UI/UX experience.
+        </p>
+        <div class="hashtags">
+          <span>#WebDevelopment</span><span>#ReactJS</span><span>#NodeJS</span>
+        </div>
+      </div>
+      <div class="timeline-image">
+        <img src="images/uva-vec.jpg" alt="Uva Vec">
+      </div>
+    </div>
+
+
+
+     <div class="timeline-row">
+      <div class="timeline-content">
+        <h3 class="job-title">Software Developer @ Uva Vec</h3>
+        <span class="job-duration">2022 – 2024</span>
+        <p class="job-desc">
+          Created responsive web apps with scalable APIs and smooth UI/UX experience.
+        </p>
+        <div class="hashtags">
+          <span>#WebDevelopment</span><span>#ReactJS</span><span>#NodeJS</span>
+        </div>
+      </div>
+      <div class="timeline-image">
+        <img src="images/uva-vec.jpg" alt="Uva Vec">
+      </div>
+    </div>
+
+
+
+     <div class="timeline-row">
+      <div class="timeline-content">
+        <h3 class="job-title">Software Developer @ Uva Vec</h3>
+        <span class="job-duration">2022 – 2024</span>
+        <p class="job-desc">
+          Created responsive web apps with scalable APIs and smooth UI/UX experience.
+        </p>
+        <div class="hashtags">
+          <span>#WebDevelopment</span><span>#ReactJS</span><span>#NodeJS</span>
+        </div>
+      </div>
+      <div class="timeline-image">
+        <img src="images/uva-vec.jpg" alt="Uva Vec">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2 class="section-title animate-element">My Projects</h2>
+        <div class="projects-grid">
+            
+            <!-- Row 1: 4 Projects -->
+            <article class="project-card animate-element">
+                <div class="project-header">
+                    <div class="project-emoji">🚀</div>
+                </div>
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x250/111845/ff2d95?text=Project+1" alt="Web Auditing Tool" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3>Web Auditing Tool</h3>
+                    <p>Final year project enabling non-technical users to evaluate website performance, design quality, and security with AI GPT integration.</p>
+                    <div class="project-tags">
+                        <span>#AI</span>
+                        <span>#FullStack</span>
+                        <span>#React</span>
+                    </div>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </article>
+
+            <article class="project-card animate-element">
+                <div class="project-header">
+                    <div class="project-emoji">🚕</div>
+                </div>
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x250/111845/50dfdb?text=Project+2" alt="Taxi Booking System" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3>Taxi Booking System</h3>
+                    <p>Desktop application that automates taxi bookings, fare calculation, and driver scheduling with database integration.</p>
+                    <div class="project-tags">
+                        <span>#Python</span>
+                        <span>#Desktop</span>
+                        <span>#Database</span>
+                    </div>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </article>
+
+            <article class="project-card animate-element">
+                <div class="project-header">
+                    <div class="project-emoji">📱</div>
+                </div>
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x250/111845/ff2d95?text=Project+3" alt="SmartLearn App" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3>SmartLearn</h3>
+                    <p>Android application providing study materials, flashcards, and scheduling tools to enhance student productivity.</p>
+                    <div class="project-tags">
+                        <span>#Android</span>
+                        <span>#Java</span>
+                        <span>#Education</span>
+                    </div>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </article>
+
+            <article class="project-card animate-element">
+                <div class="project-header">
+                    <div class="project-emoji">📚</div>
+                </div>
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x250/111845/50dfdb?text=Project+4" alt="BookShare Platform" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3>BookShare</h3>
+                    <p>Platform for sharing, exploring, and discussing books with secure login and community engagement features.</p>
+                    <div class="project-tags">
+                        <span>#PHP</span>
+                        <span>#WebApp</span>
+                        <span>#Community</span>
+                    </div>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </article>
+
+            <!-- Row 2: 4 Projects -->
+            <article class="project-card animate-element">
+                <div class="project-header">
+                    <div class="project-emoji">🤖</div>
+                </div>
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x250/111845/ff2d95?text=Project+5" alt="AI Chatbot" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3>AI Chatbot</h3>
+                    <p>Intelligent chatbot with natural language processing capabilities for customer service automation.</p>
+                    <div class="project-tags">
+                        <span>#AI</span>
+                        <span>#NLP</span>
+                        <span>#Python</span>
+                    </div>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </article>
+
+            <article class="project-card animate-element">
+                <div class="project-header">
+                    <div class="project-emoji">🛒</div>
+                </div>
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x250/111845/50dfdb?text=Project+6" alt="E-commerce Platform" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3>E-commerce Platform</h3>
+                    <p>Full-featured online shopping platform with payment integration and inventory management.</p>
+                    <div class="project-tags">
+                        <span>#React</span>
+                        <span>#NodeJS</span>
+                        <span>#MongoDB</span>
+                    </div>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </article>
+
+            <article class="project-card animate-element">
+                <div class="project-header">
+                    <div class="project-emoji">📊</div>
+                </div>
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x250/111845/ff2d95?text=Project+7" alt="Data Analytics Dashboard" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3>Data Analytics Dashboard</h3>
+                    <p>Interactive dashboard for data visualization and business intelligence with real-time updates.</p>
+                    <div class="project-tags">
+                        <span>#DataViz</span>
+                        <span>#JavaScript</span>
+                        <span>#Analytics</span>
+                    </div>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </article>
+
+            <article class="project-card animate-element">
+                <div class="project-header">
+                    <div class="project-emoji">🎮</div>
+                </div>
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x250/111845/50dfdb?text=Project+8" alt="Game Development" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3>2D Platformer Game</h3>
+                    <p>Interactive 2D platform game with custom physics engine and multiple levels.</p>
+                    <div class="project-tags">
+                        <span>#GameDev</span>
+                        <span>#Unity</span>
+                        <span>#C#</span>
+                    </div>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </article>
+
+            <!-- Row 3: 2 Projects -->
+            <article class="project-card animate-element">
+                <div class="project-header">
+                    <div class="project-emoji">🔒</div>
+                </div>
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x250/111845/ff2d95?text=Project+9" alt="Security System" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3>Network Security System</h3>
+                    <p>Advanced network monitoring and security system with real-time threat detection.</p>
+                    <div class="project-tags">
+                        <span>#Security</span>
+                        <span>#Networking</span>
+                        <span>#Python</span>
+                    </div>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </article>
+
+            <article class="project-card animate-element">
+                <div class="project-header">
+                    <div class="project-emoji">🌐</div>
+                </div>
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x250/111845/50dfdb?text=Project+10" alt="Portfolio Website" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>Modern responsive portfolio website with interactive elements and smooth animations.</p>
+                    <div class="project-tags">
+                        <span>#WebDev</span>
+                        <span>#CSS</span>
+                        <span>#JavaScript</span>
+                    </div>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title animate-element">Skills & Technologies</h2>
+            <div class="skills-wrapper">
+                <div class="skills-row row-1">
+                    <div class="skill-box">Java</div>
+                    <div class="skill-box">Python</div>
+                    <div class="skill-box">JavaScript</div>
+                    <div class="skill-box">PHP</div>
+                    <div class="skill-box">HTML</div>
+                    <div class="skill-box">CSS</div>
+                    <div class="skill-box">React.js</div>
+                    <div class="skill-box">Java</div>
+                    <div class="skill-box">Python</div>
+                    <div class="skill-box">JavaScript</div>
+                </div>
+
+                <div class="skills-row row-2">
+                    <div class="skill-box">Node.js</div>
+                    <div class="skill-box">Express.js</div>
+                    <div class="skill-box">Figma</div>
+                    <div class="skill-box">Adobe XD</div>
+                    <div class="skill-box">Photoshop</div>
+                    <div class="skill-box">Illustrator</div>
+                    <div class="skill-box">MongoDB</div>
+                    <div class="skill-box">Node.js</div>
+                    <div class="skill-box">Express.js</div>
+                    <div class="skill-box">Figma</div>
+                </div>
+
+                <div class="skills-row row-3">
+                    <div class="skill-box">Machine Learning</div>
+                    <div class="skill-box">Deep Learning</div>
+                    <div class="skill-box">NLP</div>
+                    <div class="skill-box">Data Mining</div>
+                    <div class="skill-box">TensorFlow</div>
+                    <div class="skill-box">Keras</div>
+                    <div class="skill-box">UI/UX</div>
+                    <div class="skill-box">Machine Learning</div>
+                    <div class="skill-box">Deep Learning</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title animate-element">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info animate-element">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>07 77 07 67 47</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <div>
+                                <h4>Email</h4>
+                                <p>akeellan99@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <div>
+                                <h4>Location</h4>
+                                <p>362/62c Aluth Mawatha RD, Col - 15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form animate-element" novalidate>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" aria-label="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Your Message" required aria-label="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Aruchunan Agilan. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
