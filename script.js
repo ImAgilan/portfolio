@@ -848,3 +848,135 @@ const additionalStyles = `
 const styleSheet = document.createElement('style');
 styleSheet.textContent = additionalStyles;
 document.head.appendChild(styleSheet);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // Rating System Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize all rating systems
+            initializeRatingSystems();
+            
+            // Close popup functionality
+            document.getElementById('closePopup').addEventListener('click', function() {
+                document.getElementById('thankYouPopup').classList.remove('active');
+            });
+        });
+        
+        function initializeRatingSystems() {
+            // Get all user rating containers
+            const userRatings = document.querySelectorAll('.user-rating');
+            
+            userRatings.forEach(ratingContainer => {
+                const stars = ratingContainer.querySelectorAll('.star');
+                let selectedRating = 0;
+                
+                // Add click event to each star
+                stars.forEach(star => {
+                    star.addEventListener('click', function() {
+                        const value = parseInt(this.getAttribute('data-value'));
+                        selectedRating = value;
+                        
+                        // Update star display
+                        stars.forEach((s, index) => {
+                            if (index < value) {
+                                s.textContent = '★';
+                                s.classList.add('active');
+                            } else {
+                                s.textContent = '☆';
+                                s.classList.remove('active');
+                            }
+                        });
+                    });
+                    
+                    // Add hover effect
+                    star.addEventListener('mouseover', function() {
+                        const value = parseInt(this.getAttribute('data-value'));
+                        
+                        stars.forEach((s, index) => {
+                            if (index < value) {
+                                s.textContent = '★';
+                            } else {
+                                s.textContent = '☆';
+                            }
+                        });
+                    });
+                    
+                    // Reset on mouseout if no rating selected
+                    star.addEventListener('mouseout', function() {
+                        if (selectedRating === 0) {
+                            stars.forEach(s => {
+                                s.textContent = '☆';
+                                s.classList.remove('active');
+                            });
+                        } else {
+                            stars.forEach((s, index) => {
+                                if (index < selectedRating) {
+                                    s.textContent = '★';
+                                    s.classList.add('active');
+                                } else {
+                                    s.textContent = '☆';
+                                    s.classList.remove('active');
+                                }
+                            });
+                        }
+                    });
+                });
+                
+                // Add event listener to submit button
+                const submitBtn = document.querySelector(`.submit-rating[data-project="${ratingContainer.getAttribute('data-project')}"]`);
+                const successMsg = submitBtn.nextElementSibling;
+                
+                submitBtn.addEventListener('click', function() {
+                    if (selectedRating > 0) {
+                        // In a real application, you would send this data to a server
+                        console.log(`Rating submitted for ${ratingContainer.getAttribute('data-project')}: ${selectedRating} stars`);
+                        
+                        // Show success message
+                        successMsg.style.display = 'block';
+                        
+                        // Show thank you popup
+                        document.getElementById('thankYouPopup').classList.add('active');
+                        
+                        // Reset after 3 seconds
+                        setTimeout(() => {
+                            successMsg.style.display = 'none';
+                            selectedRating = 0;
+                            stars.forEach(s => {
+                                s.textContent = '☆';
+                                s.classList.remove('active');
+                            });
+                        }, 3000);
+                    } else {
+                        alert('Please select a rating before submitting.');
+                    }
+                });
+            });
+        }
