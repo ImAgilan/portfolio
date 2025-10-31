@@ -3921,9 +3921,10 @@ footer .container.visible {
 
 /* Section Container */
 #skills.section {
-
+margin-top: -100px;
     padding: 80px 0;
     overflow: hidden;
+    margin-bottom: -300px;
 }
 
 .container {
